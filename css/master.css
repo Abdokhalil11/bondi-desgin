@@ -1,0 +1,226 @@
+body {
+  font-family: 'Roboto', sans-serif !important;
+}
+
+/* start global color */
+:root {
+  --header-color: #19283F;
+  --main-color: #FF3150;
+  --yellow-color: #FFC400;
+  --alt-color: #EFF7FA;
+  --header-links-color: #A8B9C0;
+  --other-main-color: #00D4CF;
+}
+
+/* end global color */
+
+/* start own framework */
+.main-btn {
+  background-color: var(--other-main-color) !important;
+  color: var(--alt-color) !important;
+}
+
+.bg-main {
+  background-color: var(--alt-color);
+}
+
+.text-yellow {
+  color: var(--yellow-color) !important;
+}
+
+.bg-yellow {
+  background-color: var(--yellow-color);
+}
+
+.bg-red {
+  background-color: var(--main-color) !important;
+}
+
+/* end own framework */
+
+/* start navbar */
+nav {
+  background-color: var(--header-color) !important;
+}
+
+nav .navbar-nav .nav-item .nav-link {
+  transition: .3 color;
+}
+
+nav .navbar-nav .nav-item .nav-link:hover,
+nav .navbar-nav .nav-item .nav-link .active {
+  color: var(--other-main-color) !important;
+}
+
+nav .search {
+  border-left: 1px solid var(--other-main-color);
+}
+
+nav .search i {
+  color: var(--other-main-color) !important;
+}
+
+nav .navbar-toggler {
+  font-size: 25px;
+  border-width: 2px !important;
+}
+
+nav .navbar-toggler[aria-expanded="true"] {
+  border-color: var(--other-main-color) !important;
+}
+
+nav form .form-control:focus {
+  transition: .4s;
+  width: 250px !important;
+}
+
+/* end navbar */
+
+/* start landing */
+.landing {
+  background-color: var(--header-color);
+  min-height: calc(100vh - 70px) !important;
+}
+
+.landing .main-btn {
+  width: 150px !important;
+}
+
+.heading::before {
+  content: "";
+  background-color: var(--other-main-color);
+  height: 2px;
+  width: 100px;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* end landing */
+
+
+/* start features */
+.feature .images h1 {
+  font-size: 200px;
+  color: var(--alt-color);
+}
+
+.feature .images i {
+  font-size: 40px;
+  color: var(--other-main-color);
+  bottom: 47px !important;
+}
+
+.feature p {
+  color: var(--yellow-color);
+}
+
+/* end features */
+
+/* start works */
+.works .shffles .sort p {
+  cursor: pointer;
+}
+
+.works .shffles .sort .active {
+  background-color: var(--main-color);
+  color: var(--yellow-color);
+  transition: .5s;
+}
+
+.works .shffles .my-works .work {
+  position: relative;
+}
+
+.works .shffles .my-works .work img {
+  transition: .4s;
+}
+
+.works .shffles .my-works .work img:hover {
+  filter: saturate(2);
+}
+
+/* end works */
+
+/* start team */
+.team .person {
+  position: relative;
+  transition: .5s;
+}
+
+.team .person:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #c0c0c0;
+  border-radius: 3px;
+}
+
+.team .row .person1 .person:hover,
+.team .row .person3 .person:hover {
+  background-color: #ffe6a6 !important;
+}
+
+.team .row .person:hover>* {
+  color: white !important;
+}
+
+.team .row .person2 .person:hover {
+  background-color: #a9d2fe !important;
+}
+
+.team .row .person4 .person:hover {
+  background-color: #ffcca6 !important;
+}
+
+
+
+.team .person::before {
+  content: attr(data-name);
+  position: absolute;
+  background-color: hsla(179, 100%, 42%, 0.708);
+  width: calc(100% - .5rem);
+  height: 40px;
+  bottom: 5.7rem;
+  color: white;
+  line-height: 40px;
+  font-size: 20px;
+}
+
+/* end team */
+
+/* start project */
+.project {
+  background-color: var(--header-color);
+}
+
+/* end project */
+
+
+/* start story */
+.blogs .blog {
+  transition: .4s;
+}
+
+.blogs .row .blog:hover {
+  rotate: 3deg;
+  scale: 1.1;
+}
+
+/* end story */
+/* start subscribe */
+.subscribe .btn {
+  background-color: var(--header-color) !important;
+  width: 150px;
+}
+.subscribe input::placeholder{
+  color: white;
+  font-size: 12px;
+}
+
+/* end subscribe */
+
+/* start footer */
+footer{
+  background-color: var(--header-color);
+}
+/* end footer */
